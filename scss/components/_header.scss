@@ -1,0 +1,38 @@
+.header {
+    @include title(1rem, 1em);
+    background-color: rgba(100, 148, 237, 0.692);
+    gap: 10px;
+
+    &-titulo {
+        @include flex-box();
+    }
+
+    @include mobile(){
+        width:500px;
+    }
+
+    @include tablet() {
+        @include title(1.5rem, 30px);
+        width: 100%;
+
+        @include flex-box(space-between, baseline);
+    }
+
+    @include desktop(){
+        @include flex-box(space-between,baseline);
+    }
+}
+
+.nav-list {
+    @include title(1.2rem, 0.3em);
+    text-align: center;
+
+@include tablet(){
+    @include list(10px)
+}
+
+@include desktop(){
+    @include list(30px)
+}
+
+}

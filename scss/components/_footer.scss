@@ -1,0 +1,14 @@
+.hr{
+    margin-top:50px;
+    height: 5px;
+    background-color: black;
+}
+
+.footer-direccion{
+    background-color: black;
+    color:white;
+
+    @include mp(margin-top 5px,35px);
+    line-height: 28px;
+    @include font(14px,center);
+}

@@ -1,0 +1,73 @@
+$color-primario: rgba(100, 148, 237, 0.692);
+$color-secundario: rgba(153, 141, 141, 0.623);
+
+$fuente-principal: Arial, Helvetica, sans-serif;
+$fuente-secundaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+@mixin mobile{
+    @media (min-width:320px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width:600px){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width:1200px){
+        @content;
+    }
+}
+
+
+@mixin title($font, $padding) {
+    font-size: $font;
+    padding: $padding;
+}
+
+@mixin list($gap){
+    display: flex;
+    gap:$gap;
+}
+
+@mixin flex-box($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin textos($text, $padding) {
+    text-align: $text;
+    padding: $padding;
+}
+
+@mixin flex-dir($flex, $padding, $text) {
+    display: flex;
+    flex-direction: $flex;
+    padding: $padding;
+    text-align: $text;
+}
+
+@mixin grid($columns, $rows) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}
+
+@mixin mp($margin,$padding){
+    margin:$margin;
+    padding:$padding;
+}
+
+@mixin wh($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin font($font,$text){
+    font-size: $font;
+    text-align: $text;
+}

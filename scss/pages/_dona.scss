@@ -1,0 +1,66 @@
+dona-titulo {
+    background-color: rgba(127, 255, 212, 0.267);
+
+    @include flex-box();
+    @include mp(20px 30px, 80px 40px);
+
+    gap: 40px;
+
+    &-ayuda {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+
+    }
+
+    &-empresas {
+        background-color: aquamarine;
+
+        @include wh(350px, 500px);
+
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &-img {
+
+        @include wh(500px, 250px);
+    }
+
+    &-form {
+        background-color: rgba(128, 128, 128, 0.205);
+        border-radius: 40px;
+
+        @include wh(400px, 500px);
+        @include mp(40px 40vw, 30px);
+    }
+
+    &-datos {
+        padding: 15px;
+        justify-content: space-evenly;
+    }
+
+
+}
+
+.empresa-titulo {
+
+    @include flex-dir(column, 20px, center);
+    margin: 10px;
+
+    &-texto {
+        @include textos(center, 15px);
+        height: 40%;
+    }
+
+}
+
+.dona {
+
+    padding: 80px 0px;
+}
+
+.btn-enviar{
+    padding: 40% 40%;
+}

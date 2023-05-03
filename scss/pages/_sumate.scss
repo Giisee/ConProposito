@@ -1,0 +1,53 @@
+.sumate{
+    
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 80px;
+    justify-content: space-evenly;
+    font-size: 30px;
+    color: rgb(100, 164, 237);
+
+    &-necesitas{
+        padding: 30px 0px;
+
+        @include grid(1fr 1fr,50%);
+    }
+
+    &-lista{
+        list-style: disc;
+        padding: 30px;
+        background-color: rgba(255, 140, 0, 0.384);
+
+    }
+
+    &-formulario{
+        background-color: rgba(128, 128, 128, 0.158);
+        @include grid(1fr 1fr, auto auto);
+        justify-content: space-between;
+
+        
+    }
+
+}
+
+.suma{
+    @include textos(center,35px);
+    background-color: rgba(255, 127, 80, 0.247);
+}
+
+.formulario {
+    padding: 20px;
+}
+
+.datos{
+
+    @include flex-box(space-around,start);
+    padding: 10px;
+}
+
+.enviar{
+
+    padding-top: 100px;
+    margin: 100px;
+}

@@ -71,3 +71,8 @@ $fuente-secundaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-s
     font-size: $font;
     text-align: $text;
 }
+
+@mixin column(){
+    display: flex;
+    flex-direction: column;
+}

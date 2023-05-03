@@ -7,19 +7,19 @@
         @include flex-box();
     }
 
-    @include mobile(){
-        width:500px;
+    @include mobile() {
+        width:100%;
     }
 
     @include tablet() {
         @include title(1.5rem, 30px);
-        width: 100%;
+        
 
         @include flex-box(space-between, baseline);
     }
 
-    @include desktop(){
-        @include flex-box(space-between,baseline);
+    @include desktop() {
+        @include flex-box(space-between, baseline);
     }
 }
 
@@ -27,12 +27,68 @@
     @include title(1.2rem, 0.3em);
     text-align: center;
 
-@include tablet(){
-    @include list(10px)
-}
-
-@include desktop(){
-    @include list(30px)
-}
+   
 
 }
+
+.presentacion {
+    background-color: aqua;
+    height: 10vh;
+
+
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+    @include flex-box();
+    background: linear-gradient(rgb(46, 187, 187), rgb(41, 41, 202));
+    padding: 80px;
+
+    &-titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 2em;
+
+
+    }
+
+    &-texto {
+
+        @include flex-box();
+        flex-direction: column;
+        font-size: 20px;
+        padding: 80px
+    }
+
+    &-imagen {
+        box-shadow: -10px -10px 10px 5px rgba(160, 151, 151, 0.63);
+
+    }
+
+    &-video {
+        @include flex-box();
+        padding: 80px;
+    }
+
+    @include mobile(){
+        width: 100%;
+    }
+
+    @include tablet(){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.texto-titulo {
+    padding-block-end: 15px;
+
+    &.texto {
+        padding-block-start: 15px;
+    }
+}
+

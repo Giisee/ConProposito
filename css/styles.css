@@ -26,14 +26,13 @@ ol {
 }
 @media (min-width: 320px) {
   .header {
-    width: 500px;
+    width: 100%;
   }
 }
 @media (min-width: 600px) {
   .header {
     font-size: 1.5rem;
     padding: 30px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -52,17 +51,61 @@ ol {
   padding: 0.3em;
   text-align: center;
 }
-@media (min-width: 600px) {
-  .nav-list {
-    display: flex;
-    gap: 10px;
+
+.presentacion {
+  background-color: aqua;
+  height: 10vh;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(46, 187, 187), rgb(41, 41, 202));
+  padding: 80px;
+}
+.presentacion-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 2em;
+}
+.presentacion-texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 80px;
+}
+.presentacion-imagen {
+  box-shadow: -10px -10px 10px 5px rgba(160, 151, 151, 0.63);
+}
+.presentacion-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+@media (min-width: 320px) {
+  .presentacion {
+    width: 100%;
   }
 }
-@media (min-width: 1200px) {
-  .nav-list {
+@media (min-width: 600px) {
+  .presentacion {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
   }
+}
+
+.texto-titulo {
+  padding-block-end: 15px;
+}
+.texto-titulo.texto {
+  padding-block-start: 15px;
 }
 
 .hr {
@@ -79,6 +122,225 @@ ol {
   line-height: 28px;
   font-size: 14px;
   text-align: center;
+}
+
+.proyecto-texto {
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  padding: 80px;
+}
+.proyecto-texto-titulo {
+  background-color: rgba(100, 148, 237, 0.548);
+  text-align: center;
+  padding: 40px;
+}
+
+.titulo {
+  text-align: center;
+  padding: 20px;
+}
+
+.area {
+  background-color: rgba(129, 118, 118, 0.288);
+  text-align: center;
+  padding: 50px;
+  initial-letter-align: 20px;
+  margin: 20px;
+  border: rgba(0, 0, 0, 0.226) 2px solid;
+}
+.area-titulo {
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+  text-decoration-line: underline;
+  color: rgb(58, 53, 53);
+}
+
+.texto-final {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 40px;
+  padding: 50px;
+  color: cornflowerblue;
+}
+
+.actualida-noticias {
+  background-color: white;
+  margin: 40px;
+  padding: 20px;
+  border-left: 10px solid black;
+}
+.actualida-noticias-siria {
+  background-color: rgba(30, 143, 255, 0.521);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+}
+.actualida-noticias-imagen {
+  align-content: space-around;
+}
+.actualida-noticias-mision {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+.actualida-noticias-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.titulo-siria {
+  padding: 20px 60px;
+}
+
+.seccion-noticias {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.seccion-noticias-articulo {
+  background-color: rgba(111, 49, 168, 0.801);
+  width: 200;
+  height: 150;
+  overflow: hidden;
+}
+@media (min-width: 320px) {
+  .seccion-noticias {
+    flex-direction: column;
+  }
+}
+
+.noticia-imagen {
+  width: 150;
+  height: 100;
+  padding-bottom: 10px;
+}
+.texto {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.texto-noticia {
+  text-align: center;
+  padding: 15px;
+}
+
+dona-titulo {
+  background-color: rgba(127, 255, 212, 0.267);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  padding: 80px 40px;
+  gap: 40px;
+}
+dona-titulo-ayuda {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+dona-titulo-empresas {
+  background-color: aquamarine;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+dona-titulo-img {
+  width: 500px;
+  height: 250px;
+}
+dona-titulo-form {
+  background-color: rgba(128, 128, 128, 0.205);
+  border-radius: 40px;
+  width: 400px;
+  height: 500px;
+  margin: 40px 40vw;
+  padding: 30px;
+}
+dona-titulo-datos {
+  padding: 15px;
+  justify-content: space-evenly;
+}
+
+.empresa-titulo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+.empresa-titulo-texto {
+  text-align: center;
+  padding: 15px;
+  height: 40%;
+}
+
+.dona {
+  padding: 80px 0px;
+}
+
+.btn-enviar {
+  padding: 40% 40%;
+}
+
+.sumate {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 80px;
+  justify-content: space-evenly;
+  font-size: 30px;
+  color: rgb(100, 164, 237);
+}
+.sumate-necesitas {
+  padding: 30px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50%;
+}
+.sumate-lista {
+  list-style: disc;
+  padding: 30px;
+  background-color: rgba(255, 140, 0, 0.384);
+}
+.sumate-formulario {
+  background-color: rgba(128, 128, 128, 0.158);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+}
+
+.suma {
+  text-align: center;
+  padding: 35px;
+  background-color: rgba(255, 127, 80, 0.247);
+}
+
+.formulario {
+  padding: 20px;
+}
+
+.datos {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 10px;
+}
+
+.enviar {
+  padding-top: 100px;
+  margin: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */

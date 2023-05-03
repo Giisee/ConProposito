@@ -1,0 +1,45 @@
+.proyecto-texto {
+    display: flex;
+
+    @include font(20px, center);
+    @include mp(20px, 80px);
+
+    &-titulo {
+        background-color: rgba(100, 148, 237, 0.548);
+        text-align: center;
+        padding: 40px;
+        
+    }
+
+
+
+}
+
+.titulo{
+    @include textos(center,20px)
+}
+
+.area {
+    background-color: rgba(129, 118, 118, 0.288);
+    @include textos(center, 50px);
+
+    initial-letter-align: 20px;
+    margin: 20px;
+    border: rgba(0, 0, 0, 0.226) 2px solid;
+
+    &-titulo {
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+        text-decoration-line: underline;
+        color: rgb(58, 53, 53)
+    }
+
+
+}
+
+.texto-final{
+    
+    @include font(1.5rem,center);
+    @include mp(40px,50px);
+    color: cornflowerblue;
+}

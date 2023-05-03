@@ -1,0 +1,77 @@
+.actualida-noticias {
+    background-color: white;
+
+    @include mp(40px, 20px);
+    border-left: 10px solid black;
+
+    &-siria {
+        background-color: rgba(30, 143, 255, 0.521);
+
+        @include grid(1fr 1fr, auto auto);
+        align-items: center;
+    }
+
+    &-imagen {
+        align-content: space-around;
+    }
+
+    &-mision {
+
+        @include column();
+        padding: 60px;
+        @include font(20px, center);
+    }
+
+    &-video {
+        @include flex-box();
+        padding-top: 80px;
+    }
+
+   
+}
+
+.titulo-siria{
+    padding: 20px 60px;
+
+}
+
+.seccion-noticias{
+
+    @include column();
+    gap:20px;
+
+    &-articulo{
+        background-color: rgba(111, 49, 168, 0.801);
+
+        @include wh(200,150);
+
+        overflow: hidden;
+    }
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+}
+
+.noticia-imagen{
+    @include wh(150,100);
+    padding-bottom: 10px;
+
+    @include mobile{
+        
+    }
+}
+
+.texto{
+    @include mp(10px,20px);
+    @include column();
+    text-align: center;
+
+    &-noticia{
+        @include textos(center,15px);
+    }
+
+
+}
+
